@@ -89,6 +89,7 @@ var position= friendsAge.indexOf(21);
 console.log(position);
 //Array advanced, push, pop, array length
 var friendsId = [19, 49, 24, 40, 16];
+console.log(friendsId.length);
 console.log(friendsId);
 friendsId.push(20);
 friendsId.push(21);
@@ -98,3 +99,20 @@ friendsId.pop(22);
 console.log(friendsId);
 friendsId.push(21);
 console.log(friendsId);
+friendsId.unshift(33); //add element at beggining
+console.log(friendsId);
+friendsId.shift(33); //delete element at beggining
+console.log(friendsId);
+//slice
+var ForSlice=friendsId.slice(1,5);// start from 1 index and take 4 element
+console.log(ForSlice);
+
+//while loop
+var num=15;
+while(num<=20)
+{
+    console.log(num);
+    num++;
+}
+
+
