@@ -116,3 +116,87 @@ while(num<=20)
 }
 
 
+console.log("   ");
+
+//for loop
+var number=[12, 33, 42, 78, 98,76];
+for(var i=0;i<number.length;i++){
+
+    var result=number[i];
+    
+    console.log(result);
+}
+
+console.log("   ");
+//for loop array sum
+var number=[12, 33, 42, 78, 98,76];
+var sum=0;
+for(var i=0;i<number.length;i++){
+    var sum=sum+number[i];
+}
+console.log(sum);
+
+//switch
+var num=5;
+switch(num){
+    case 10:
+        console.log("I m 10");
+        break;
+    case 200:
+        console.log("I m 200");
+        break;
+    case 5:
+        console.log("I m 5");
+        break;
+    default:
+        console.log("I m default");
+        
+}
+//function
+function callMe()
+{
+    console.log('hellow');
+    console.log("how are you");
+}
+
+callMe();
+
+function ForFunction(n1,n2)
+{
+    var result=n1+n2;
+    return result;
+}
+
+var sum = ForFunction(5,8);
+console.log(sum);
+
+function doubleIt(num)
+{       
+     var num=num*2;
+     return num;
+}
+var a=doubleIt(3);
+var b=doubleIt(4);
+var total =a+b;
+console.log(a,b,total);
+
+//object declare
+var std1={
+    id:33,
+    name:'fahi',
+    sec:'A',
+    batch:'38th'
+}
+var std_id=std1.id;
+var std_name=std1['name'];
+console.log(std_id);
+console.log(std_name);
+
+//update object element
+std1.name="jannath";
+console.log(std1);
+//add element
+std1.dept="CSE";
+console.log(std1);
+
+
