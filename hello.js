@@ -198,5 +198,93 @@ console.log(std1);
 //add element
 std1.dept="CSE";
 console.log(std1);
+console.log("  ");
+//inchToFeet
+var inch;
+function inchToFeet(inch)
+{
 
+    var feet=inch/12;
+    return feet;
+}
+var numbers=[145, 654, 254, 332,896];
 
+var sd1=inchToFeet(numbers[0]);
+var sd2=inchToFeet(numbers[3]);
+console.log(sd1,sd2);
+
+//example of var reassign
+var name1="fahi";
+if(name1.length<6)
+{
+    name1="jannath";
+    console.log(name1);
+    
+}
+//const variable
+//(if u have not reassign any variable value,then use const ),
+//let is reassignable(use in es6)
+
+//leap  yr
+var year;
+function leapYear(year)
+{
+    
+    if(year%4==0 && year%100!=0){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+var call=leapYear(2004);
+console.log(call);
+
+console.log("   ");
+
+//factorial with function + for loop
+
+var factorial=1;
+
+function functionFactorial(num)
+{
+for(i=1;i<=num;i++)
+{
+   factorial=factorial*i;
+}
+ return factorial;
+}
+var result=functionFactorial(2);
+console.log(factorial);
+
+//factorial while loop
+var factorial=1;
+
+function functionFactorial(num)
+{   var i=1;
+    while(i<=num)
+    {
+         factorial=factorial*i;
+         i++;
+    }
+        return factorial;
+}
+var result=functionFactorial(4);
+console.log(factorial);
+
+//recursive factorial function
+
+function functionFactorial(n)
+{
+    if(n==0)
+    {
+        return 1;
+    }else{
+
+      return n * functionFactorial(n-1);
+       
+    }
+}
+
+var result=functionFactorial(3);
+console.log(result);
