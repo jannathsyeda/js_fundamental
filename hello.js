@@ -346,7 +346,7 @@ function fibo(n)
 var  result=fibo(12);
 console.log(result);
 
-//fibbonacci
+//fibbonacci recursive
 function fibocannci(n){
 
 if(n==0){
@@ -379,5 +379,5 @@ function primeNumber(n)
     }
     return 'prime number';
 }
-var result=primeNumber(139);
+var result=primeNumber(17);
 console.log(result);
