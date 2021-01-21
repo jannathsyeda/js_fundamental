@@ -288,3 +288,96 @@ function functionFactorial(n)
 
 var result=functionFactorial(3);
 console.log(result);
+ console.log(" ----------");
+
+//fibbonachi
+
+function fibonacciFunction(n){
+    var c, i, a=0, b=1;
+    console.log(a);
+    console.log(b);
+
+    for(i=0;i<=n-2;i++)
+    {
+        c=a+b;
+        console.log(c);
+        a=b;
+        b=c;
+    }
+   
+}
+fibonacciFunction(12);
+
+
+
+console.log("---------------");
+//fibonacci with array
+
+function fiboArray(n)
+{   
+    var fibo=[0, 1];
+    for( var i = 2; i <= n; i++)
+    {
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+
+
+    }
+    return fibo;
+
+}
+var result=fiboArray(12);
+console.log(result);
+
+//Fibonacci Element in a Recursive Way
+console.log("----------");
+function fibo(n)
+{
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+    else{
+        return fibo(n-1)+fibo(n-2);
+
+    }
+}
+var  result=fibo(12);
+console.log(result);
+
+//fibbonacci
+function fibocannci(n){
+
+if(n==0){
+    return [0];
+
+}
+if(n==1){
+    return [0,1];
+}
+else{
+    var fibo=fibocannci(n-1);
+    var next=fibo[n-1]+fibo[n-2];
+    fibo.push(next);
+    return fibo;
+
+}
+}
+var result=fibocannci(12);
+console.log(result);
+//prime number
+console.log("---------");
+function primeNumber(n)
+{
+    for(var i=2;i<n-1;i++)
+    {
+        if(n%i==0){
+         return   "not a prime number";
+            
+        }
+    }
+    return 'prime number';
+}
+var result=primeNumber(139);
+console.log(result);
